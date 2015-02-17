@@ -1,0 +1,161 @@
+<!doctype html>
+<html ng-app='app'>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="http://static.womenshuo.com/@/alert/css/example.css">
+<link rel="stylesheet" href="http://static.womenshuo.com/@/alert/css/sweet-alert.css">
+<script src="./lib/require.min.js" data-main='./lib/alert' ></script>
+
+</head>
+
+<body >
+
+<div>
+    <input type="button" value="只有标题" onclick='show_alert1()' />
+</div>
+
+<div>
+    <input type="button" value="有标题和文本的" onclick='show_alert2()' />
+</div>
+
+<div>
+    <input type="button" value="带有成功提示和错误提示的" onclick='show_alert3()' />
+</div>
+
+<div>
+    <input type="button" value="带有确认和取消按钮的弹出框" onclick='show_alert4()' />
+</div>
+
+<div>
+    <input type="button" value="带有确认和取消按钮的弹出框" onclick='show_alert5()' />
+</div>
+
+<div>
+    <input type="button" value="带有图片的弹出框" onclick='show_alert6()' />
+</div>
+
+<div>
+    <input type="button" value="带有html的弹出框" onclick='show_alert7()' />
+</div>
+
+<div>
+    <input type="button" value="带有定时关闭的弹出框" onclick='show_alert8()' />
+</div>
+
+<table>
+    <tr>
+        <td>参数</td>
+        <td>默认值</td>
+        <td>描述</td>
+    </tr>
+
+    <tr>
+        <td>title</td>
+        <td>null (必须)</td>
+        <td>弹出框标题（可以是html格式）</td>
+    </tr>
+
+    <tr>
+        <td>text</td>
+        <td>null</td>
+        <td>弹出框文本内容（可以是html格式）</td>
+    </tr>
+
+    <tr>
+        <td>html</td>
+        <td>false</td>
+        <td>如果设置为true，将无法逃避的标题和文本参数。（如果你担心XSS攻击。设置为false）</td>
+    </tr>
+
+    <tr>
+        <td>type</td>
+        <td>null</td>
+        <td>显示相应的图标动画：“警告”，“错误”，“成功”和“信息”（类型：warning(警告)；error（错误）;info(信息);success(成功)）</td>
+    </tr>
+
+    <tr>
+        <td>allowEscapeKey</td>
+        <td>true</td>
+        <td>如果设置为true，用户可以按Escape键关闭弹出框。</td>
+    </tr>
+
+    <tr>
+        <td>customClass</td>
+        <td>null</td>
+        <td>自定义的CSS类弹出框。</td>
+    </tr>
+
+    <tr>
+        <td>allowOutsideClick</td>
+        <td>false</td>
+        <td>如果设置为true，用户可以通过点击外面关闭弹出框。</td>
+    </tr>
+
+    <tr>
+        <td>showCancelButton</td>
+        <td>false</td>
+        <td>如果设置为TRUE，“取消”按钮将显示，用户可点击关闭弹出框。</td>
+    </tr>
+
+    <tr>
+        <td>showConfirmButton</td>
+        <td>true</td>
+        <td>如果设置为FALSE，“确定/确认”按钮将被隐藏</td>
+    </tr>
+
+    <tr>
+        <td>confirmButtonText</td>
+        <td>"OK"</td>
+        <td>改变确认按钮文本内容</td>
+    </tr>
+
+    <tr>
+        <td>confirmButtonColor</td>
+        <td>"#AEDEF4"</td>
+        <td>改变确认按钮背景颜色（必须是一个十六进制值）。</td>
+    </tr>
+
+    <tr>
+        <td>cancelButtonText</td>
+        <td>"Cancel"</td>
+        <td>改变取消按钮文本内容</td>
+    </tr>
+
+    <tr>
+        <td>closeOnConfirm</td>
+        <td>true</td>
+        <td>是否关闭确认按钮</td>
+    </tr>
+
+    <tr>
+        <td>imageUrl</td>
+        <td>null</td>
+        <td>添加一个自定义图标的弹出框</td>
+    </tr>
+
+    <tr>
+        <td>imageSize</td>
+        <td>"80x80"	</td>
+        <td>如果源设置，您可以指定如何大你想要的图标是在PX图像大小。传递一个字符串值分离的一个“X”。第一个值是宽度，二是高度。</td>
+    </tr>
+
+    <tr>
+        <td>timer</td>
+        <td>null</td>
+        <td>弹出框自动关闭定时器。在MS（毫秒）。</td>
+    </tr>
+
+    <tr>
+        <td>animation</td>
+        <td>true</td>
+        <td>如果设置为FALSE，弹出框的动画将被禁用。</td>
+    </tr>
+
+
+</table>
+
+
+</body>
+</html>

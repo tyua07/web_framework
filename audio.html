@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://static.womenshuo.com/@/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://static.womenshuo.com/@/jquery-ui-1.11.3/jquery-ui.min.css">
+    <script src="./lib/require.min.js" data-main="./lib/audio"></script>
+</head>
+
+<style>
+    *{margin: 0;padding: 0;}
+
+    .audio{width: 700px;height: 200px;background: #fff;overflow: hidden;border:1px solid #ccc;box-shadow: 2px 8px 8px #ccc;}
+    .audio_title{width: 100%;height: 85px;background: #4281f4;color: #fff;}
+    .audio_title_box{width: 300px;margin: 0 auto;padding: 10px 0;line-height: 65px;}
+    .audio_title_box span{display:inline-block;height: 30px;}
+    .audio_name{text-indent: 40px;font-size: 30px;}
+    .audio_auther{font-size: 16px;text-indent: 10px;}
+
+    .audio_main{height: 60px;line-height: 60px;color:#000;}
+    .audio_main_box{width: 500px;margin: 0 auto;}
+    .audio_main_box div{display: inline-block;}
+    .audio_now_time{padding-right: 20px;}
+    .audio_progress{position:relative;width: 372px;height: 3px;background: #ccc;}
+    .ui-slider-range{background: #ff9630;}
+    .ui-slider-handle{width: 10px;height: 10px;background: #fafafa;border-radius: 50%;border: 0;}
+    .audio_time{padding-left: 20px;}
+
+    .audio_handle{height: 70px;}
+    .audio_handle_box{margin: 0 auto;width: 300px;cursor:pointer;}
+    .audio_handle_box > div{display: inline-block;margin:0 20px;color: #000;}
+
+    .audio_volume{position: relative;}
+    .audio_volume_progress_box{position: absolute;top: -100px;left: -10px;display:none;width: 30px;height: 120px;border: 1px solid #ccc;box-shadow:2px 8px 8px #ccc;background: #fff;border-radius: 4px;}
+    .audio_volume_mute{left: 6px;top:5px;}
+    .audio_volume_progress{top:18px;width: 3px;height:80px;background: #ff9630; left:13px;}
+    .audio_volume_progress_box .ui-slider-handle{left: -8px;}
+</style>
+<body>
+
+    <div class="audio">
+
+        <!--播放器标题开始 -->
+        <div class="audio_title">
+            <div class="audio_title_box">
+                <span class="audio_name">好不容易</span>
+                <span class="audio_auther">方大同</span>
+            </div>
+        </div>
+        <!--播放器标题结束 -->
+
+        <!--播放器主体开始 -->
+        <div class="audio_main">
+            <div class="audio_main_box">
+                <div class="audio_now_time">00:00</div>
+                <div class="audio_progress">
+
+                </div>
+                <div class="audio_time">00:00</div>
+            </div>
+        </div>
+        <!--播放器主体结束 -->
+
+        <!--播放器功能区开始 -->
+        <div class="audio_handle">
+            <div class="audio_handle_box">
+                <div class="audio_mode glyphicon glyphicon-refresh"></div>
+                <div class="audio_prev glyphicon glyphicon-backward"></div>
+                <div class="audio_play glyphicon glyphicon-play" ></div>
+                <div class="audio_next glyphicon glyphicon-forward"></div>
+
+                <!--音量功能区开始 -->
+                <div class="audio_volume glyphicon glyphicon-volume-up">
+                    <div class="audio_volume_progress_box">
+                        <div class="audio_volume_mute glyphicon glyphicon-volume-down"></div>
+                        <div class="audio_volume_progress"></div>
+                    </div>
+                </div>
+                <!--音量功能区开始 -->
+
+            </div>
+        </div>
+        <!--播放器功能区结束 -->
+
+    </div>
+
+</body>
+</html>
